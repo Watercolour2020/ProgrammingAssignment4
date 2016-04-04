@@ -1,9 +1,8 @@
 # ProgrammingAssignment4
---
-title: "Codebook run_analysis.R"
+run_analysis.R"
 author: "Howard Stiff"
 date: "April 3 2016"
-output:
+output: text file: TrainAndTestSummary_tidy.txt <-- summary of measurement mean/std by subject activity
 ---
 
 ## Project Description
