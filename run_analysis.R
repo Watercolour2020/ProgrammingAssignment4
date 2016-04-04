@@ -216,3 +216,9 @@ TrainAndTestSummary <-
 View(TrainAndTestSummary) #head(TrainAndTestSummary,12);  tail(TrainAndTestSummary,12) #get mean of all measurement means & stds
 table(TrainAndTestSummary$SubjectCode,
       TrainAndTestSummary$ActivityCode) #frequency analysis of combinations of Subject and Activity
+
+#output tidy summary to text file
+setwd("~/GitHub/ProgrammingAssignment4")
+z<-file("TrainAndTestSummary_tidy.txt","w")
+write.table(TrainAndTestSummary, file="TrainAndTestSummary_tidy.txt", row.name=FALSE)
+close(z)
